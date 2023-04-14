@@ -1,6 +1,6 @@
 baseURL = "https://raykong.ca/"
 theme = "hugo-ficurinia"
-title = "My nice blog"
+title = "Ray Kong"
 languageCode = "en"
 defaultContentLanguage = "en"
 
@@ -14,19 +14,19 @@ summaryLength = 70  # number of words for article summaries
 
 
 [params]
-    author = "Gabriele Musco"
-    description = "A description for my website"  # this will be added as metadata
+    author = "Ray Kong"
+    description = "Personal Website"  # this will be added as metadata
 
     posts = "posts"  # content directory where to find home page posts; default searches in "posts" and "post"
-    showPostsLink = true  # show or hide the link to the simple post list
+    showPostsLink = false  # show or hide the link to the simple post list
     extraContentDirs = []  # other content directories to render similarly to the home page
     showcaseDir = "showcase"  # create a content directory that shows a special showcase section in the home page
 
     # shows a specified single page as a home page, instead of the traditional articles list
     # requires setting `homeSinglePage`
     # goes well with extraContentDirs
-    showSinglePageAsHome = false
-    homeSinglePage = "/home"
+    # showSinglePageAsHome = true
+    # homeSinglePage = "/about"
 
     # It's best to put these icons in the "static" folder of your site
     logo = "/logo.svg"
@@ -38,8 +38,8 @@ summaryLength = 70  # number of words for article summaries
 
     logoRightOfTitle = false  # positions the logo to the right of the title; default: false
 
-    showTags = true  # show the Tags menu item; default true
-    showRss = true  # show the link for the RSS feed; default true
+    showTags = false  # show the Tags menu item; default true
+    showRss = false  # show the link for the RSS feed; default true
 
     imageInArticlePreview = false  # show images in article preview; default false
     fitImageInArticlePreview = false  # make article preview images fit the article preview instead of getting cropped
@@ -127,22 +127,34 @@ summaryLength = 70  # number of words for article summaries
     # other elements in this menu are added automatically from the "pages" folder
     # the folder it will look into can be customized with the pages variable
     # in params above
-    [[menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about/"
-        weight = 10
+    # [[menu.main]]
+    #     identifier = "about"
+    #     name = "About"
+    #     url = "/about/"
+    #     weight = 10
     # these links (menu.icons) will be added as icon links below the main nav
     [[menu.icons]]
-        identifier = "gitlab"
-        name = "GitLab"
-        url = "https://gitlab.com/gabmus"
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/deruikong"
         weight = 10
+    # [[menu.icons]]
+    #     identifier = "codeforces"
+    #     name = "Codeforces"
+    #     url = "https://codeforces.com/profile/kdrkdr"
+    #     weight = 15
+    # [[menu.icons]]
+    #     identifier = "dmoj"
+    #     name = "DMOJ"
+    #     url = "https://dmoj.ca/user/kdrkdr"
+    #     weight = 15
+
     [[menu.icons]]
-        identifier = "gnome"
-        name = "GNOME GitLab"
-        url = "https://gitlab.gnome.org/gabmus"
+        identifier = "instagram"
+        name = "Instagram"
+        url = "https://instagram.com/ray_kongg"
         weight = 20
+
 
 # this section is necessary if you want infinite scrolling
 # it allows to output the article list as paged JSON so that "pages" can be retrieved via javascript
